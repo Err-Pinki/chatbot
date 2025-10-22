@@ -1,0 +1,141 @@
+/*
+ * Archivo: styles.css
+ * Estilos para el sitio web minimalista de EcoSnackBot
+ */
+
+:root {
+    --color-principal: #4CAF50; /* Verde vibrante, asociado a la naturaleza/eco */
+    --color-secundario: #f4f4f4; /* Fondo claro */
+    --color-texto: #333;
+    --color-sombra: rgba(0, 0, 0, 0.1);
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    color: var(--color-texto);
+    background-color: var(--color-secundario);
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Centrar el contenido principal */
+}
+
+/* ----------------------------------------------------- */
+/* Encabezado */
+/* ----------------------------------------------------- */
+
+header {
+    background-color: var(--color-principal);
+    color: white;
+    width: 100%;
+    text-align: center;
+    padding: 20px 0;
+    box-shadow: 0 2px 4px var(--color-sombra);
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2.5em;
+    letter-spacing: 1px;
+}
+
+header p {
+    margin: 5px 0 0;
+    font-style: italic;
+    opacity: 0.9;
+}
+
+/* ----------------------------------------------------- */
+/* Contenido Principal y Secciones */
+/* ----------------------------------------------------- */
+
+main {
+    width: 90%;
+    max-width: 1000px;
+    padding: 20px 0;
+}
+
+section {
+    background-color: white;
+    padding: 30px;
+    margin-bottom: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px var(--color-sombra);
+}
+
+section h2, section h3 {
+    color: var(--color-principal);
+    border-bottom: 2px solid var(--color-principal);
+    padding-bottom: 5px;
+    margin-top: 0;
+}
+
+/* ----------------------------------------------------- */
+/* Estilos Específicos del Chatbot (Lo más importante) */
+/* ----------------------------------------------------- */
+
+#chatbot-container {
+    padding: 40px;
+    border: 3px solid var(--color-principal); /* Borde destacado */
+    background-color: #e8f5e9; /* Tono de verde muy claro */
+}
+
+#chatbot-widget {
+    min-height: 450px; /* Altura mínima para asegurar visibilidad */
+    background-color: white;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.1em;
+    color: #666;
+    text-align: center;
+}
+
+.placeholder {
+    padding: 20px;
+}
+
+/* ----------------------------------------------------- */
+/* Pie de página */
+/* ----------------------------------------------------- */
+
+footer {
+    width: 100%;
+    text-align: center;
+    padding: 15px 0;
+    background-color: #333;
+    color: white;
+    font-size: 0.9em;
+    margin-top: 20px;
+}
+
+/* ----------------------------------------------------- */
+/* Media Queries para Responsividad (Móviles) */
+/* ----------------------------------------------------- */
+
+@media (max-width: 600px) {
+    header h1 {
+        font-size: 2em;
+    }
+    
+    main {
+        width: 95%;
+        padding: 10px 0;
+    }
+    
+    section {
+        padding: 20px;
+    }
+    
+    #chatbot-container {
+        padding: 20px;
+    }
+    
+    #chatbot-widget {
+        min-height: 400px;
+    }
+}
